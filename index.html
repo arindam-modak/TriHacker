@@ -203,3 +203,45 @@
 				</div>
 			</div><!-- End container -->
 		</nav><!-- End navbar-->
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>Weather App</h1>
+				<p> Hello everyone guyz...</p>
+				<div class="btn-group">
+					<a href="" class="btn btn-lg btn-primary">Download App</a>
+				</div>
+			</div>
+		</div>
+		
+		<section>
+			<div class="well">
+				<div class="container text-center">
+					
+					<h3 class="text-center text-primary">Enter city</h3>
+					<span id="error"></span>
+				</div>
+				<div class="row form-group form-inline" id="rowDiv">
+					<input type="text" name="city" id="city" class="form-control" placeholder="city name">
+					<button id="submitWeather" class="btn btn-primary">search city</button>
+				</div>
+				
+				<div id="show"></div>
+			</div>
+		</section>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		var modal = document.getElementById('id01');
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+	
+	<script src="weather.js"></script>
+	
+	</body>
+</html>
