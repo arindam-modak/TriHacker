@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Weather App </title>
-	<meta name="description" content="TourWiki App">
+	<meta name="description" content="Weather App">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<script>
 		var modal = document.getElementById('id01');
 
@@ -18,15 +19,56 @@
 			}
 		}
 	</script>
+	 
+  
 </head>	
 
 	<style>
 	body{
 		padding:20px;
 	}
-	
+	.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 2px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 100%;
+    margin-left: -20px!important;
+    margin-top: -80%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
 	.well{
 		background-color: rgba(255,255,255,0.4); // I don't know the .well color, so I used white as example
+	}
+	
+	#submitWeather{
+		align:center;
+		width: 15%;
 	}
 	
 	/* Full-width input fields */
@@ -150,7 +192,8 @@
 	</style>
 <body background="river.jpg">
 	<!-- Navbar -->
-	
+		
+		
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
 			<div class= "containeer">
 				<div class="navbar-header">
@@ -206,29 +249,32 @@
 		</nav><!-- End navbar-->
 		
 		<!-- jumbotron -->
+		
 		<div class="jumbotron">
 			<div class="container text-center">
-				<h1>Weather App</h1>
+				<h1 style="padding-top:-2px;margin-top:-15px;margin-bottom:-2px;">Weather App</h1>
 				<p> Hello everyone guyz...</p>
 				<div class="btn-group">
 					<a href="" class="btn btn-lg btn-primary">Download App</a>
 				</div>
 			</div>
 		</div>
-		
+		<br>
 		<section>
 			<div class="well">
 				<div class="container text-center">
 					
-					<h3 class="text-center text-primary">Enter city</h3>
+					<h3 class="text-center text-primary" style="color:orange;">Enter city</h3>
 					<span id="error"></span>
 				</div>
-				<div class="row form-group form-inline" id="rowDiv">
-					<input type="text" name="city" id="city" class="form-control" placeholder="city name">
-					<button id="submitWeather" class="btn btn-primary">search city</button>
+				
+				<div class="form" style="text-align:center">
+					<input type="text" name="city" id="city" class="form-control" placeholder="city name" style="width:20%">
+					<br>
+					<button id="submitWeather" class="btn btn-primary button">search city</button>
 				</div>
 				
-				<div id="show"></div>
+				<div id="show" style="text-align:center;color:cyan;"></div>
 			</div>
 		</section>
 		
@@ -245,7 +291,15 @@
 	</script>
 	
 	<script src="weather.js"></script>
-	
+	 <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> 
+  <!-- uncomment lines below to include extra p5 libraries --> 
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>--> 
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>--> 
+  <script language="javascript" type="text/javascript" src="sketch_161228j.js"></script> 
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN --> 
+  <!-- this line removes any default padding and style. you might only need one of these values set. --> 
+  <script language="javascript" type="text/javascript" src="Drop.js"></script> 
+  <script language="javascript" type="text/javascript" src="PurpleRain_p5_Js.js"></script>
 	</body>
 </html>
 		
