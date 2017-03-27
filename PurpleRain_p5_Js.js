@@ -1,7 +1,7 @@
 var drops = [];
                                    //BY - Arindam Das Modak
 function setup() {
-  createCanvas(1310, 1000);
+  createCanvas(1310, 60);
   for (var i = 0; i < 500; i++) {
     drops[i] = new Drop();
   }
