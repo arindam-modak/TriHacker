@@ -7,6 +7,7 @@
 	<meta name="description" content="About us">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -49,6 +50,33 @@
 	  		box-shadow: 0 10px 10px -10px #333;
       		margin: -50px auto 10px; 
 		}
+		
+		.order {
+		  position: absolute;
+		  top: 50px;
+		  left: 50px;
+		  width: 75px;
+		  line-height: 75px;
+		  text-align:center;
+		  opacity: 1;
+		  background: red;
+		  color:#fff;
+		  border-radius:50%;
+		  -webkit-animation: bounce .6s infinite alternate;
+		  -moz-animation: bounce .6s infinite alternate;
+		  animation: bounce .6s infinite alternate;
+		  
+		}
+		@-webkit-keyframes bounce {
+		  to { -webkit-transform: scale(1.2); }
+		}
+		@-moz-keyframes bounce {
+		  to { -moz-transform: scale(1.2); }
+		}
+		@keyframes bounce {
+		  to { transform: scale(1.2); }
+		}
+		
 	</style>
 <body>
 
@@ -56,6 +84,7 @@
 		<h2> About Us </h2>
 	</div>
 	<hr>
+	<a href="index.html" class="order" style="text-decoration: none;"> Home </a>
 	<br><br><br>
 	<div class="row">
 		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"> </div>
@@ -63,20 +92,22 @@
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="thumbnail" style="text-align:center;width:220px;">
 								<img src="me.png" style="height:200px;width:200px;">
-								<a href="#"><br>Arindam Das Modak<br>&nbsp </a>
+								<a href="#" style="text-decoration:none;color:green;"><br>Arindam Das Modak<br>&nbsp </a>
 							</div>
+							<a href="https://github.com/arindam-modak"><i class="fa fa-github" aria-hidden="true" style="font-size: 40px;margin-top: 15px;text-align:center;padding-left:90px;"></i></a>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="thumbnail" style="text-align:center;width:220px;">
 								<img src="rishab.jpg" style="height:200px;width:200px;">
-								<a href="#"><br>Rishab Agarwal <br> &nbsp </a>
+								<a href="#" style="text-decoration:none;color:blue;"><br>Rishab Agarwal <br> &nbsp </a>
 							</div>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="thumbnail" style="text-align:center;width:220px;">
 								<img src="parth.jpg" style="height:200px;width:200px;">
-								<a href="#"><br>Parth Agarwal <br> &nbsp </a>
+								<a href="#" style="text-decoration:none;color:orange;"><br>Parth Agarwal <br> &nbsp </a>
 							</div>
+							<a href="https://github.com/xxator"><i class="fa fa-github" aria-hidden="true" style="font-size: 40px;margin-top: 15px;text-align:center;padding-left:90px;"></i></a>
 		</div>
 
 
