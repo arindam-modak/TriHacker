@@ -7,4 +7,4 @@
 
 ### This weather app lets you see weather report of any city in the world. It covers more than lakhs of cities.
 
-The github page is not working due to http and https mix content issue.
+### The github page is not working due to http and https mix content issue. So Kindly download it and run on your local system.
